@@ -38,6 +38,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     http.authorizeRequests().antMatchers("/resources/**", "/registration").permitAll().anyRequest()
         .authenticated().and().formLogin().loginPage("/login").permitAll().and().logout()
-        .logoutSuccessUrl("/login").permitAll();
+        .permitAll();
   }
 }
