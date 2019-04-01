@@ -24,8 +24,9 @@ public class DataInit implements ApplicationRunner {
       user.setPassword("Welcome1!");
       user.setPasswordConfirm("Welcome1!");
       userDAO.save(user);
+
     }
-    
+
   }
 
 }
