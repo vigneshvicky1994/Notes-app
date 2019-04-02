@@ -5,6 +5,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import org.hibernate.annotations.CreationTimestamp;
@@ -22,6 +23,7 @@ public class Notes {
   @Column
   private String title;
 
+  @Lob
   @NotBlank(message = "Description is mandatory")
   @Column
   private String description;
